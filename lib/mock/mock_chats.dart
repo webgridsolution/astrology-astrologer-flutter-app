@@ -1,0 +1,142 @@
+import '../models/chat_message_model.dart';
+import '../utils/constants.dart';
+
+final mockThreads = <ChatThreadModel>[
+  ChatThreadModel(
+    id: 'ch1',
+    clientId: 'c1',
+    clientName: 'Aman Verma',
+    clientImage: AppAssets.aman,
+    lastMessage: 'Thank you so much!',
+    lastTime: DateTime(2026, 8, 18, 10, 30),
+    unread: 2,
+    starred: true,
+    online: true,
+  ),
+  ChatThreadModel(
+    id: 'ch2',
+    clientId: 'c4',
+    clientName: 'Neha Patel',
+    clientImage: AppAssets.neha,
+    lastMessage: 'Please check the details.',
+    lastTime: DateTime(2026, 8, 17, 18, 10),
+    unread: 1,
+    online: false,
+  ),
+  ChatThreadModel(
+    id: 'ch3',
+    clientId: 'c3',
+    clientName: 'Rohit Singh',
+    clientImage: AppAssets.rohit,
+    lastMessage: 'Namaste Ji',
+    lastTime: DateTime(2026, 8, 17, 12, 0),
+    unread: 0,
+    online: false,
+  ),
+  ChatThreadModel(
+    id: 'ch4',
+    clientId: 'c2',
+    clientName: 'Priya Sharma',
+    clientImage: AppAssets.priya,
+    lastMessage: 'Great guidance!',
+    lastTime: DateTime(2026, 8, 16, 21, 5),
+    unread: 0,
+    starred: true,
+    online: true,
+  ),
+  ChatThreadModel(
+    id: 'ch5',
+    clientId: 'c5',
+    clientName: 'Vikram Joshi',
+    clientImage: AppAssets.vikram,
+    lastMessage: 'When can we talk?',
+    lastTime: DateTime(2026, 8, 16, 15, 40),
+    unread: 0,
+    online: false,
+  ),
+];
+
+final mockMessages = <String, List<ChatMessageModel>>{
+  'ch1': [
+    ChatMessageModel(
+      id: 'm1',
+      chatId: 'ch1',
+      senderId: 'ast-1',
+      isAstrologer: true,
+      text: 'Namaste Aman 🙏',
+      time: DateTime(2026, 8, 18, 10, 25),
+    ),
+    ChatMessageModel(
+      id: 'm2',
+      chatId: 'ch1',
+      senderId: 'c1',
+      isAstrologer: false,
+      text: 'I want to know about my career.',
+      time: DateTime(2026, 8, 18, 10, 25),
+    ),
+    ChatMessageModel(
+      id: 'm3',
+      chatId: 'ch1',
+      senderId: 'ast-1',
+      isAstrologer: true,
+      text: 'Sure, I will analyze your chart and help you with the best guidance.',
+      time: DateTime(2026, 8, 18, 10, 27),
+    ),
+    ChatMessageModel(
+      id: 'm4',
+      chatId: 'ch1',
+      senderId: 'c1',
+      isAstrologer: false,
+      text: 'Thank you so much!',
+      time: DateTime(2026, 8, 18, 10, 29),
+    ),
+    ChatMessageModel(
+      id: 'm5',
+      chatId: 'ch1',
+      senderId: 'ast-1',
+      isAstrologer: true,
+      text: "You're welcome. Let's begin.",
+      time: DateTime(2026, 8, 18, 10, 30),
+    ),
+  ],
+  'ch2': [
+    ChatMessageModel(
+      id: 'n1',
+      chatId: 'ch2',
+      senderId: 'c4',
+      isAstrologer: false,
+      text: 'Please check the details.',
+      time: DateTime(2026, 8, 17, 18, 10),
+    ),
+  ],
+  'ch3': [
+    ChatMessageModel(
+      id: 'r1',
+      chatId: 'ch3',
+      senderId: 'c3',
+      isAstrologer: false,
+      text: 'Namaste Ji',
+      time: DateTime(2026, 8, 17, 12, 0),
+    ),
+  ],
+  'ch4': [
+    ChatMessageModel(
+      id: 'p1',
+      chatId: 'ch4',
+      senderId: 'c2',
+      isAstrologer: false,
+      text: 'Great guidance!',
+      time: DateTime(2026, 8, 16, 21, 5),
+    ),
+  ],
+  'ch5': [
+    ChatMessageModel(
+      id: 'v1',
+      chatId: 'ch5',
+      senderId: 'c5',
+      isAstrologer: false,
+      text: 'When can we talk?',
+      time: DateTime(2026, 8, 16, 15, 40),
+    ),
+  ],
+};

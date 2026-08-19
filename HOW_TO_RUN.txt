@@ -1,0 +1,30 @@
+AstroChat Astrologer Partner App
+=================================
+POWERED BY Webgrid Solution
+
+1. Install Flutter 3.22+  https://docs.flutter.dev/get-started/install
+2. Unzip this folder
+3. In a terminal:
+
+   cd astroguide_astrologer
+   chmod +x setup.sh
+   ./setup.sh
+   flutter run
+
+   If you prefer manual steps:
+
+   flutter create . --project-name astroguide_astrologer --org com.webgrid.astrochat
+   flutter pub get
+   flutter run
+
+4. Login with any 10-digit mobile number
+5. OTP is always: 123456
+
+Or register as a new astrologer (name, mobile, email, experience,
+languages, specializations, about) then verify OTP. Those details
+are stored with SharedPreferences and shown on Dashboard / Profile.
+
+Demo incoming video call: tap the ringing-phone icon on the dashboard.
+
+All bookings, chats, calls, kundli, earnings and KYC use mock data
+and are fully wired for navigation.

@@ -1,0 +1,15 @@
+class PayoutModel {
+  final String id;
+  final double amount;
+  final DateTime date;
+  final String status;
+  final String method;
+
+  const PayoutModel({
+    required this.id,
+    required this.amount,
+    required this.date,
+    required this.status,
+    required this.method,
+  });
+}
